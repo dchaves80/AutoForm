@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8FE3BE2-FF4D-4278-8D10-F16B0170A215}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extras\LinesControl.cs" />
+    <Compile Include="Extras\LoadWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extras\LoadWindows.Designer.cs">
+      <DependentUpon>LoadWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form31_Dorso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form31_Dorso.Designer.cs">
+      <DependentUpon>Form31_Dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_02_Dorso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_02_Dorso.Designer.cs">
+      <DependentUpon>Form_02_Dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_08_Dorso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_08_Dorso.Designer.cs">
+      <DependentUpon>Form_08_Dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_08_Frente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_08_Frente.Designer.cs">
+      <DependentUpon>Form_08_Frente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_31A_Dorso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_31A_Dorso.Designer.cs">
+      <DependentUpon>Form_31A_Dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_31A_Frente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_31A_Frente.Designer.cs">
+      <DependentUpon>Form_31A_Frente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_31_Frente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_31_Frente.Designer.cs">
+      <DependentUpon>Form_31_Frente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_12_Frente_Unicamente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_12_Frente_Unicamente.Designer.cs">
+      <DependentUpon>Form_12_Frente_Unicamente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_02_Frente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_02_Frente.Designer.cs">
+      <DependentUpon>Form_02_Frente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_59_dorso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_59_dorso.Designer.cs">
+      <DependentUpon>Form_59_dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_59_frente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_59_frente.Designer.cs">
+      <DependentUpon>Form_59_frente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosExtras\ABMCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosExtras\ABMCliente.Designer.cs">
+      <DependentUpon>ABMCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosExtras\Calibradoimpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosExtras\Calibradoimpresion.Designer.cs">
+      <DependentUpon>Calibradoimpresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosExtras\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosExtras\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Splash\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Extras\LoadWindows.resx">
+      <DependentUpon>LoadWindows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form31_Dorso.resx">
+      <DependentUpon>Form31_Dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_02_Dorso.resx">
+      <DependentUpon>Form_02_Dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_02_Frente.resx">
+      <DependentUpon>Form_02_Frente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_08_Dorso.resx">
+      <DependentUpon>Form_08_Dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_08_Frente.resx">
+      <DependentUpon>Form_08_Frente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_12_Frente_Unicamente.resx">
+      <DependentUpon>Form_12_Frente_Unicamente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_31A_Dorso.resx">
+      <DependentUpon>Form_31A_Dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_31A_Frente.resx">
+      <DependentUpon>Form_31A_Frente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_31_Frente.resx">
+      <DependentUpon>Form_31_Frente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_59_dorso.resx">
+      <DependentUpon>Form_59_dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_59_frente.resx">
+      <DependentUpon>Form_59_frente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosExtras\ABMCliente.resx">
+      <DependentUpon>ABMCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosExtras\Calibradoimpresion.resx">
+      <DependentUpon>Calibradoimpresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosExtras\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{f41eefa9-6386-477b-9a9f-2e22def8a9c4}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjectSave\ObjectSave.csproj">
+      <Project>{970118ed-7b67-4bc4-b597-bb1c42e3cf0b}</Project>
+      <Name>ObjectSave</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reportes\Reportes.csproj">
+      <Project>{62bdcd13-fa09-4eba-8595-c14a1aac2017}</Project>
+      <Name>Reportes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TSPrint.Image.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

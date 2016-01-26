@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62BDCD13-FA09-4EBA-8595-C14A1AAC2017}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reportes</RootNamespace>
+    <AssemblyName>Reportes</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calibracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calibracion.Designer.cs">
+      <DependentUpon>Calibracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Medida.cs" />
+    <Compile Include="F02_Dorso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F02_Dorso.Designer.cs">
+      <DependentUpon>F02_Dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F02_Frente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F02_Frente.Designer.cs">
+      <DependentUpon>F02_Frente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F08_Dorso_Motovehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F08_Dorso_Motovehiculo.Designer.cs">
+      <DependentUpon>F08_Dorso_Motovehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F08_Dorso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F08_Dorso.Designer.cs">
+      <DependentUpon>F08_Dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F08_Frente_Motovehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F08_Frente_Motovehiculo.Designer.cs">
+      <DependentUpon>F08_Frente_Motovehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F08_Frente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F08_Frente.Designer.cs">
+      <DependentUpon>F08_Frente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F12_Frente_Motovehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F12_Frente_Motovehiculo.Designer.cs">
+      <DependentUpon>F12_Frente_Motovehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F12_Frente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F12_Frente.Designer.cs">
+      <DependentUpon>F12_Frente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F31A_Dorso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F31A_Dorso.Designer.cs">
+      <DependentUpon>F31A_Dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F31A_Frente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F31A_Frente.Designer.cs">
+      <DependentUpon>F31A_Frente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F31_Dorso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F31_Dorso.Designer.cs">
+      <DependentUpon>F31_Dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F59_Dorso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F59_Dorso.Designer.cs">
+      <DependentUpon>F59_Dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F59_Frente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F59_Frente.Designer.cs">
+      <DependentUpon>F59_Frente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="F31_Frente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F31_Frente.Designer.cs">
+      <DependentUpon>F31_Frente.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Calibracion.rdlc" />
+    <EmbeddedResource Include="Calibracion.resx">
+      <DependentUpon>Calibracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F02_Dorso - MargenesViyuya.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F02_Dorso - Lucida Console.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F02_Dorso.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F02_Dorso.resx">
+      <DependentUpon>F02_Dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F02_Frente.rdlc" />
+    <EmbeddedResource Include="F02_Frente.resx">
+      <DependentUpon>F02_Frente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F08_Dorso_Motovehiculo.resx">
+      <DependentUpon>F08_Dorso_Motovehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F08_Dorso_Motovehiculo.rdlc" />
+    <EmbeddedResource Include="F08_Dorso.rdlc" />
+    <EmbeddedResource Include="F08_Dorso.resx">
+      <DependentUpon>F08_Dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F08_Frente_Motovehiculo.rdlc" />
+    <EmbeddedResource Include="F08_Frente_Motovehiculo.resx">
+      <DependentUpon>F08_Frente_Motovehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F08_Frente.rdlc" />
+    <EmbeddedResource Include="F08_Frente.resx">
+      <DependentUpon>F08_Frente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F12_Frente_Motovehiculo.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F12_Frente_Motovehiculo.resx">
+      <DependentUpon>F12_Frente_Motovehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F12_Frente.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F12_Frente.resx">
+      <DependentUpon>F12_Frente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F31A_Dorso.resx">
+      <DependentUpon>F31A_Dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F31A_Frente.resx">
+      <DependentUpon>F31A_Frente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F31A_Dorso.rdlc" />
+    <EmbeddedResource Include="F31_Dorso.rdlc" />
+    <EmbeddedResource Include="F31_Dorso.resx">
+      <DependentUpon>F31_Dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F31A_Frente.rdlc" />
+    <EmbeddedResource Include="F31_Frente.rdlc" />
+    <EmbeddedResource Include="F31_Frente.resx">
+      <DependentUpon>F31_Frente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F59_Dorso.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F59_Dorso.resx">
+      <DependentUpon>F59_Dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F59_Frente.rdlc" />
+    <EmbeddedResource Include="F59_Frente.resx">
+      <DependentUpon>F59_Frente.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
