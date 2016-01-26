@@ -17,6 +17,7 @@ namespace Reportes.Class
 
 
         public static string path = Application.StartupPath + "\\margin.cfg";
+        public static decimal pulgada = 0.393700787403700736m;
 
         static decimal separatevaluefromparameter(string completeline)
         {
@@ -51,56 +52,66 @@ namespace Reportes.Class
 
         }
 
-        public static int ObtenerMedidaVertical ()
+        
+
+        public static decimal ObtenerMedidaVertical ()
         {
             decimal vertical=0m;
             decimal horizontal=0m;
             if (System.IO.File.Exists(path))
             {
                 System.IO.StreamReader SR = new System.IO.StreamReader(path);
-                vertical = separatevaluefromparameter(SR.ReadLine())*0.393701m;
-                horizontal = separatevaluefromparameter(SR.ReadLine())*0.393701m;
+                vertical = separatevaluefromparameter(SR.ReadLine())*pulgada;
+                horizontal = separatevaluefromparameter(SR.ReadLine())*pulgada;
                 
                 SR.Close();
             }
 
-            if (vertical > 1m) 
+            if (vertical > pulgada) 
             {
-                vertical = 0.9525m - (vertical - 1m);
+                vertical = 0.375m - (vertical - pulgada);
             }
-            else if (vertical < 1m) 
+            else if (vertical < pulgada) 
             {
-                vertical = (1m - vertical) + 0.9525m;
+                vertical = (pulgada - vertical) + 0.375m;
+            }
+            else if (vertical == pulgada)
+            {
+                vertical = 0.375m;
             }
 
-            return Convert.ToInt32(vertical);
+            return vertical;
         }
 
-        public static int ObtenerMedidaHorizontal()
+        public static decimal ObtenerMedidaHorizontal()
         {
             decimal vertical = 0m;
             decimal horizontal = 0m;
             if (System.IO.File.Exists(path))
             {
                 System.IO.StreamReader SR = new System.IO.StreamReader(path);
-                vertical = separatevaluefromparameter(SR.ReadLine()) * 0.393701m;
-                horizontal = separatevaluefromparameter(SR.ReadLine()) * 0.393701m;
+                vertical = separatevaluefromparameter(SR.ReadLine()) * pulgada;
+                horizontal = separatevaluefromparameter(SR.ReadLine()) * pulgada;
 
                 SR.Close();
 
             }
 
-            if (horizontal > 1m)
+            if (horizontal > pulgada)
             {
-                horizontal = 0.9525m - (horizontal - 1m);
+                horizontal = 0.375m - (horizontal - pulgada);
             }
-            else if (horizontal < 1m)
+            else if (horizontal < pulgada)
             {
-                vertical = (1m - horizontal) + 0.9525m;
+                horizontal = (pulgada - horizontal) + 0.375m;
+            }
+            else if (horizontal == pulgada)
+            {
+                horizontal = 0.375m;
             }
 
 
-            return Convert.ToInt32(horizontal);
+            return horizontal;
         }
     }
 }

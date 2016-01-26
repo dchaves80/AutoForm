@@ -40,6 +40,8 @@
             this.reportViewer1.Size = new System.Drawing.Size(722, 304);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.RenderingComplete += new Microsoft.Reporting.WinForms.RenderingCompleteEventHandler(this.reportViewer1_RenderingComplete);
+            this.reportViewer1.RenderingBegin += new System.ComponentModel.CancelEventHandler(this.reportViewer1_RenderingBegin);
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // F02_Dorso
             // 
