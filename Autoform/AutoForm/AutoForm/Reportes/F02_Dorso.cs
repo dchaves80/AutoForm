@@ -417,7 +417,7 @@ namespace Reportes
         {
 
 
-            MessageBox.Show("ORIGINAL \n centimetros left:" + reportViewer1.Margin.Left.ToString() + "\n" + "centimetros top:" + reportViewer1.Margin.Top.ToString());
+            //MessageBox.Show("ORIGINAL \n centimetros left:" + reportViewer1.Margin.Left.ToString() + "\n" + "centimetros top:" + reportViewer1.Margin.Top.ToString());
             
             if (reportViewer1.GetTotalPages() > 1) 
                 {
@@ -435,7 +435,7 @@ namespace Reportes
                 
                 reportViewer1.SetPageSettings(PS);
 
-                MessageBox.Show("centimetros left:" + PS.Margins.Left.ToString() + "\n" + "centimetros top:" + PS.Margins.Top.ToString());
+                //MessageBox.Show("centimetros left:" + PS.Margins.Left.ToString() + "\n" + "centimetros top:" + PS.Margins.Top.ToString());
                 
             }
             

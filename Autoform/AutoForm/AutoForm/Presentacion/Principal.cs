@@ -46,6 +46,10 @@ namespace Presentacion
 
             if (lvForms.SelectedItems.Count > 0)
             {
+                Extras.Configurations.loadChanges();
+
+                Color t_backcolor = Extras.Configurations.ObtainColor(lvForms.SelectedItems[0].Text);
+
                 if (lvForms.SelectedItems[0].Text == "Formulario 31 - Frente")
                 {
                     splitContainer1.Panel2.Controls.Add(new Forms.Form_31_Frente());
@@ -90,8 +94,21 @@ namespace Presentacion
                 {
                     splitContainer1.Panel2.Controls.Add(new Forms.Form_08_Dorso());
                 }
+                if (lvForms.SelectedItems[0].Text == "(Ninguno)")
+                {
+                    CurrentForm = null;
+                }
+                if (t_backcolor != Color.Black) 
+                {
+                    if (lvForms.SelectedItems[0].Text != "(Ninguno)") 
+                    {
+                        splitContainer1.Panel2.Controls[0].BackColor = t_backcolor;
+                    }
+                }
+
             }
 
+           
             if (splitContainer1.Panel2.Controls.Count > 0)
             {
                 CurrentForm = (UserControl)splitContainer1.Panel2.Controls[0];
@@ -1301,6 +1318,23 @@ namespace Presentacion
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
             new FormulariosExtras.Calibradoimpresion().ShowDialog();
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            if (CurrentForm != null)
+            {
+                CLD.Color = CurrentForm.BackColor;
+                
+            CLD.ShowDialog();
+            
+                CurrentForm.BackColor = CLD.Color;
+                string formname = lvForms.SelectedItems[0].Text;
+                string formcolor = CLD.Color.R.ToString() +"," +  CLD.Color.G.ToString()+"," + CLD.Color.B.ToString();
+                Extras.Configurations.SaveConfig(formname, formcolor);
+                Extras.Configurations.saveChanges();
+            }
+            
         }
 
         
