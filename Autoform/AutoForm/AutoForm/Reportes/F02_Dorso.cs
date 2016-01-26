@@ -406,6 +406,7 @@ namespace Reportes
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_otipodocumento", _otipodocumento));
 
             reportViewer1.SetDisplayMode(DisplayMode.PrintLayout);
+
             this.reportViewer1.RefreshReport();
             
             
@@ -423,8 +424,8 @@ namespace Reportes
                     this.Close();
                 }
                 ReportPageSettings RPS = reportViewer1.LocalReport.GetDefaultPageSettings();
-                double tocm = (RPS.Margins.Left*2.54)/100;
-                MessageBox.Show("centimetros:" + tocm.ToString());
+                RPS.Margins.Left = Convert.ToInt32( (Class.Medida.ObtenerMedidaHorizontal() * 0.393701m) * 100m);
+                MessageBox.Show("centimetros:" + RPS.Margins.Left.ToString());
                 
           
             

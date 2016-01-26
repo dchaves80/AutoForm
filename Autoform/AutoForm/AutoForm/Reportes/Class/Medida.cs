@@ -64,9 +64,13 @@ namespace Reportes.Class
                 SR.Close();
             }
 
-            if (vertical > 1) 
+            if (vertical > 1m) 
             {
-                vertical = 
+                vertical = 0.9525m - (vertical - 1m);
+            }
+            else if (vertical < 1m) 
+            {
+                vertical = (1m - vertical) + 0.9525m;
             }
 
             return Convert.ToInt32(vertical);
@@ -85,6 +89,17 @@ namespace Reportes.Class
                 SR.Close();
 
             }
+
+            if (horizontal > 1m)
+            {
+                horizontal = 0.9525m - (horizontal - 1m);
+            }
+            else if (horizontal < 1m)
+            {
+                vertical = (1m - horizontal) + 0.9525m;
+            }
+
+
             return Convert.ToInt32(horizontal);
         }
     }
