@@ -83,6 +83,7 @@ namespace Presentacion.Extras
                     t_conf.key = result[0];
                     t_conf.value = result[1];
                     configs.Add(t_conf);
+
                 }
                 SR.Close();
             
