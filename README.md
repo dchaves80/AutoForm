@@ -1,2 +1,5 @@
 # AutoForm
-asd
+
+Documentacion
+# Ayuda y cambios
+Cambios de version
