@@ -122,7 +122,7 @@ namespace Reportes
              reportViewer1.LocalReport.SetParameters(new ReportParameter("p_numero", _numero));
              reportViewer1.LocalReport.SetParameters(new ReportParameter("p_localidad", _localidad));
 
-            this.reportViewer1.RefreshReport();
+             new Class.ReportingCalibration(reportViewer1);
         }
     }
 }

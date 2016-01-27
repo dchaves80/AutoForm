@@ -12,7 +12,7 @@ namespace Reportes
 {
     public partial class F02_Dorso : Form
     {
-        bool seted = false;
+        
         string _diaordena;
         string _mesordena;
         string _añoordena;
@@ -405,7 +405,7 @@ namespace Reportes
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_oautorizo",_oautorizo));
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_otipodocumento", _otipodocumento));
 
-            reportViewer1.SetDisplayMode(DisplayMode.PrintLayout);
+            new Class.ReportingCalibration(reportViewer1);
 
             
         }
@@ -415,40 +415,6 @@ namespace Reportes
 
         private void reportViewer1_RenderingComplete(object sender, RenderingCompleteEventArgs e)
         {
-
-
-            //MessageBox.Show("ORIGINAL \n centimetros left:" + reportViewer1.Margin.Left.ToString() + "\n" + "centimetros top:" + reportViewer1.Margin.Top.ToString());
-            
-            if (reportViewer1.GetTotalPages() > 1) 
-                {
-                    MessageBox.Show("El reporte contiene mas de una página, esto puede ocasionar una impresión erronea en el reporte, reduzca el contenido de los campos que se encuentran al final del formulario o campos extensos como por ejemplo observaciones o documentacion extra","Error en el reporte",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    this.Close();
-                }
-
-
-           
-
-           if (seted == false) 
-            {
-                seted = true;
-                System.Drawing.Printing.PageSettings PS = new System.Drawing.Printing.PageSettings();
-                PS.Margins.Top = Convert.ToInt32(Class.Medida.ObtenerMedidaVertical() * 100m);
-                PS.Margins.Left = Convert.ToInt32(Class.Medida.ObtenerMedidaHorizontal() * 100m);
-                PS.Margins.Bottom = 0;
-                PS.Margins.Right = 0;
-                PS.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
-                
-                reportViewer1.SetPageSettings(PS);
-                reportViewer1.RefreshReport();
-                
-                //MessageBox.Show("centimetros left:" + PS.Margins.Left.ToString() + "\n" + "centimetros top:" + PS.Margins.Top.ToString());
-                
-            }
-            
-            
-                
-          
-            
         }
 
         private void F02_Dorso_FormClosing(object sender, FormClosingEventArgs e)

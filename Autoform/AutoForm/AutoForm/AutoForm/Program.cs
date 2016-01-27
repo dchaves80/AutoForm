@@ -15,7 +15,14 @@ namespace AutoForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Presentacion.Splash.Splash());
+            try
+            {
+                Application.Run(new Presentacion.Splash.Splash());
+            }
+            catch (Exception E)
+            {
+                
+            }
         }
     }
 }

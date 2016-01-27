@@ -218,9 +218,9 @@ namespace Reportes
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_dpbarriolocalidad", _dpbarriolocalidad));
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_dpcodpost", _dpcodpost));
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_dpprovincia", _dpprovincia));
-          
-           
-            this.reportViewer1.RefreshReport();
+
+
+            new Class.ReportingCalibration(reportViewer1);
         }
     }
 }

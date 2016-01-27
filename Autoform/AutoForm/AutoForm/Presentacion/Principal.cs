@@ -29,6 +29,30 @@ namespace Presentacion
             lvForms.Items.Add("Formulario 31A- Dorso");
             lvForms.Items.Add("Formulario 08 - Frente");
             lvForms.Items.Add("Formulario 08 - Dorso");
+
+            Image IMGForm = new Bitmap(Presentacion.Properties.Resources.Form);
+            Image IMGNone = new Bitmap(Presentacion.Properties.Resources.empty);
+
+            lvForms.LargeImageList = new ImageList();
+            lvForms.SmallImageList = new ImageList();
+
+            lvForms.LargeImageList.Images.Add("formulario",IMGForm);
+            lvForms.SmallImageList.Images.Add("formulario",IMGForm);
+            lvForms.LargeImageList.Images.Add("ninguno", IMGNone);
+            lvForms.SmallImageList.Images.Add("ninguno", IMGNone);
+
+            foreach (ListViewItem LVI in lvForms.Items) 
+            {
+                if (LVI.Text.Contains("Formulario"))
+                {
+                    LVI.ImageKey = "formulario";
+                }
+
+                if (LVI.Text.Contains("Ninguno"))
+                {
+                    LVI.ImageKey = "ninguno";
+                }
+            }
             
         }
         private void lvForms_SelectedIndexChanged(object sender, EventArgs e)

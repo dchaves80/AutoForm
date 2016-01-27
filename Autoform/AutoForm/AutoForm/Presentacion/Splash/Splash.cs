@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -15,7 +16,18 @@ namespace Presentacion.Splash
         public Splash()
         {
             InitializeComponent();
-            timer1.Start();
+            timer1.Stop();
+            if (Schlüssel.Registro.comprobarregistro() == true)
+            {
+                timer1.Start();
+            }
+            else 
+            {
+                MessageBox.Show("El tiempo de prueba finalizo. \n Consulte con el soporte de venta para adquirir el producto");
+                try { File.Delete(Application.StartupPath + "\\" + "Reportes.dll"); } catch  { }
+                this.Close();
+            }
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)

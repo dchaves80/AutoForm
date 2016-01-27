@@ -449,7 +449,7 @@ string p_Orecibi
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_Oautorizoa", _Oautorizoa));
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_Otipodedocumentoynumero", _Otipodedocumentoynumero));
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_Orecibi", _Orecibi));
-            this.reportViewer1.RefreshReport();
+            new Class.ReportingCalibration(reportViewer1);
         }
     }
 }

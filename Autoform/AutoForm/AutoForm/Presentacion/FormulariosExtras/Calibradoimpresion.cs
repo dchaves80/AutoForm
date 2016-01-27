@@ -36,9 +36,17 @@ namespace Presentacion.FormulariosExtras
             {
                 try
                 {
-                    return Convert.ToDecimal(chain[1].Replace(".", ","));
+                    decimal decexp = Convert.ToDecimal(chain[1].Replace(".", ","));
+                    if (decexp < 1.9m)
+                    {
+                        return decexp;
+                    }
+                    else 
+                    {
+                        return 1.9m;
+                    }
                 }
-                catch (Exception E) 
+                catch 
                 {
                     return 0;
                 }
@@ -50,7 +58,7 @@ namespace Presentacion.FormulariosExtras
                 {
                     return Convert.ToDecimal(chain[1].Replace(",", "."));
                 }
-                catch (Exception E) 
+                catch 
                 {
                     return 0;
                 }

@@ -145,7 +145,7 @@ string p_ctipoynumerodocumentop
         }
         private void EstablecerHandlers()
         {
-            reportViewer1.RenderingComplete += reportViewer1_RenderingComplete;
+          
 
         }
 
@@ -154,11 +154,7 @@ string p_ctipoynumerodocumentop
         private void reportViewer1_RenderingComplete(object sender, RenderingCompleteEventArgs e)
         {
 
-            if (reportViewer1.GetTotalPages() > 1)
-            {
-                MessageBox.Show("El reporte contiene mas de una página, esto puede ocasionar una impresión erronea en el reporte, reduzca el contenido de los campos que se encuentran al final del formulario o campos extensos como por ejemplo observaciones o documentacion extra", "Error en el reporte", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
-            }
+           
 
 
 
@@ -208,7 +204,7 @@ string p_ctipoynumerodocumentop
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_capellidosynombres", _capellidosynombres));
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_ctipoynumerodocumentop", _ctipoynumerodocumentop));
 
-            this.reportViewer1.RefreshReport();
+            new Class.ReportingCalibration(reportViewer1);
         }
     }
 }

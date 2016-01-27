@@ -54,6 +54,7 @@
       <DependentUpon>Calibracion.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Medida.cs" />
+    <Compile Include="Class\ReportingCalibration.cs" />
     <Compile Include="F02_Dorso.cs">
       <SubType>Form</SubType>
     </Compile>

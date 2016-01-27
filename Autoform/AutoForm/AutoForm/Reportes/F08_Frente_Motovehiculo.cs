@@ -597,7 +597,7 @@ string p_fuso
             reportViewer1.LocalReport.SetParameters(new ReportParameter("p_fuso", _fuso));
 
 
-            this.reportViewer1.RefreshReport();
+            new Class.ReportingCalibration(reportViewer1);
         }
     }
 }

@@ -32,7 +32,7 @@ namespace Reportes.Class
                 {
                     return Convert.ToDecimal(chain[1].Replace(".", ","));
                 }
-                catch (Exception E)
+                catch 
                 {
                     return 0;
                 }
@@ -44,7 +44,7 @@ namespace Reportes.Class
                 {
                     return Convert.ToDecimal(chain[1].Replace(",", "."));
                 }
-                catch (Exception E)
+                catch 
                 {
                     return 0;
                 }
