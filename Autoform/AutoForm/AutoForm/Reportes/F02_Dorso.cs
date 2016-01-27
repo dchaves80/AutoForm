@@ -425,16 +425,22 @@ namespace Reportes
                     this.Close();
                 }
 
-            if (seted == false) 
+
+           
+
+           if (seted == false) 
             {
                 seted = true;
                 System.Drawing.Printing.PageSettings PS = new System.Drawing.Printing.PageSettings();
                 PS.Margins.Top = Convert.ToInt32(Class.Medida.ObtenerMedidaVertical() * 100m);
                 PS.Margins.Left = Convert.ToInt32(Class.Medida.ObtenerMedidaHorizontal() * 100m);
+                PS.Margins.Bottom = 0;
+                PS.Margins.Right = 0;
                 PS.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
                 
                 reportViewer1.SetPageSettings(PS);
-
+                reportViewer1.RefreshReport();
+                
                 //MessageBox.Show("centimetros left:" + PS.Margins.Left.ToString() + "\n" + "centimetros top:" + PS.Margins.Top.ToString());
                 
             }

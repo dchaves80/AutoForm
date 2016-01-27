@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace Presentacion.FormulariosExtras
 {
 
@@ -14,7 +15,8 @@ namespace Presentacion.FormulariosExtras
     public partial class Calibradoimpresion : Form
     {
 
-
+        Microsoft.Reporting.WinForms.ReportViewer RV;
+        Reportes.Calibracion frm;
         string path = Application.StartupPath + "\\margin.cfg";
 
         public Calibradoimpresion()
@@ -56,9 +58,20 @@ namespace Presentacion.FormulariosExtras
 
         }
 
+
+        void reportViewer1_RenderingComplete(object sender, Microsoft.Reporting.WinForms.RenderingCompleteEventArgs e)
+        {
+            frm.Visible = false;
+            RV.PrintDialog();
+            frm.Hide();
+        }
+
         private void Calibradoimpresion_Load(object sender, EventArgs e)
         {
-
+            frm = new Reportes.Calibracion();
+            frm.Show();
+            RV = frm.reportViewer1;
+            frm.reportViewer1.RenderingComplete += reportViewer1_RenderingComplete;
            
             if (System.IO.File.Exists(path))
             {
@@ -77,6 +90,7 @@ namespace Presentacion.FormulariosExtras
                 txtMS.Text = "0,0";
                 SW.Close();
             }
+
 
             
         }

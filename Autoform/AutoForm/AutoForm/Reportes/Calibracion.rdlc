@@ -32,7 +32,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Calibracion de impresión, mida la distancia del borde derecho de la hoja a la linea vertical y del borde superior de la hoja a la linea horizontal</Value>
+                <Value>Calibración de impresión, mida la distancia del borde derecho de la hoja a la linea vertical y del borde superior de la hoja a la linea horizontal e ingrese los valores en la ventana de dialogo para obtener un calibración precisa</Value>
                 <Style />
               </TextRun>
             </TextRuns>
