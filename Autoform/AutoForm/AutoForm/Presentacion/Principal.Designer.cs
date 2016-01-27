@@ -34,8 +34,8 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.TSPrint = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.lvForms = new System.Windows.Forms.ListView();
             this.SFD = new System.Windows.Forms.SaveFileDialog();
@@ -81,10 +81,10 @@
             this.toolStripButton3,
             this.toolStripButton5});
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.toolStrip1.Location = new System.Drawing.Point(0, 110);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 91);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(166, 324);
+            this.toolStrip1.Size = new System.Drawing.Size(166, 343);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -139,22 +139,6 @@
             this.TSPrint.ToolTipText = "Imprimir Formulario";
             this.TSPrint.Click += new System.EventHandler(this.TSPrint_Click);
             // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.AutoSize = false;
-            this.toolStripButton3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(143, 51);
-            this.toolStripButton3.Text = "Clientes";
-            this.toolStripButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
-            // 
             // toolStripButton4
             // 
             this.toolStripButton4.AutoSize = false;
@@ -170,6 +154,23 @@
             this.toolStripButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.AutoSize = false;
+            this.toolStripButton3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(143, 51);
+            this.toolStripButton3.Text = "Clientes";
+            this.toolStripButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton3.Visible = false;
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripButton5
             // 
