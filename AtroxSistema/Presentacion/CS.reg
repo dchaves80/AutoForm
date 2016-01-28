@@ -1,0 +1,4 @@
+[Conexion]
+StringConexion=Data Source=DAVID-PC\SQLEXPRESS;Initial Catalog = BDSistemaPrueba; user id = sa; password = cloverfield161185
+BaseDeDatos=Prueba
+StringConexionRestaurar=Data Source=DAVID-PC\SQLEXPRESS;Initial Catalog = master; user id = sa; password = cloverfield161185

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77B3BC8C-5F1F-4DAA-8ED0-4642061DCF86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reportes</RootNamespace>
+    <AssemblyName>Reportes</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\ChangeConnection.cs" />
+    <Compile Include="Clases\Imprimir.cs" />
+    <Compile Include="DataSet\BDSistemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDSistemaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFacturaFactureroA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFacturaFactureroA.Designer.cs">
+      <DependentUpon>frmFacturaFactureroA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmFacturaFactureroB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmFacturaFactureroB.Designer.cs">
+      <DependentUpon>frmFacturaFactureroB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmImprimirComprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmImprimirComprobante.Designer.cs">
+      <DependentUpon>frmImprimirComprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmListadoMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmListadoMovimientos.Designer.cs">
+      <DependentUpon>frmListadoMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmListarArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmListarArticulos.Designer.cs">
+      <DependentUpon>frmListarArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmListarCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmListarCuentas.Designer.cs">
+      <DependentUpon>frmListarCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmParametrosListadoArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmParametrosListadoArticulos.Designer.cs">
+      <DependentUpon>frmParametrosListadoArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmParametrosMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmParametrosMovimientos.Designer.cs">
+      <DependentUpon>frmParametrosMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmParametrosResumenCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmParametrosResumenCuenta.Designer.cs">
+      <DependentUpon>frmParametrosResumenCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmResumenCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmResumenCuenta.Designer.cs">
+      <DependentUpon>frmResumenCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\frmFacturaFactureroA.resx">
+      <DependentUpon>frmFacturaFactureroA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmFacturaFactureroB.resx">
+      <DependentUpon>frmFacturaFactureroB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmImprimirComprobante.resx">
+      <DependentUpon>frmImprimirComprobante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmListadoMovimientos.resx">
+      <DependentUpon>frmListadoMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmListarArticulos.resx">
+      <DependentUpon>frmListarArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmListarCuentas.resx">
+      <DependentUpon>frmListarCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmParametrosListadoArticulos.resx">
+      <DependentUpon>frmParametrosListadoArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmParametrosMovimientos.resx">
+      <DependentUpon>frmParametrosMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmParametrosResumenCuenta.resx">
+      <DependentUpon>frmParametrosResumenCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmResumenCuenta.resx">
+      <DependentUpon>frmResumenCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\repFactureroB.rdlc" />
+    <EmbeddedResource Include="Reportes\repFacturero.rdlc" />
+    <EmbeddedResource Include="Reportes\repListadoMovimientos.rdlc" />
+    <EmbeddedResource Include="Reportes\repMovimientos.rdlc" />
+    <EmbeddedResource Include="Reportes\repArticulos.rdlc" />
+    <EmbeddedResource Include="Reportes\repCuentas.rdlc" />
+    <EmbeddedResource Include="Reportes\repResumenCuenta.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSet\BDSistemaDataSet.xsc">
+      <DependentUpon>BDSistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\BDSistemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDSistemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\BDSistemaDataSet.xss">
+      <DependentUpon>BDSistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seleccionado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Invertir Seleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deseleccionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{41BA4804-0E02-4DE6-8607-CEC954774DA9}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{14fe9aaf-3446-423e-8b45-443279b55d80}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{f0f8b4a1-9d7f-4306-9594-ef728d58e12b}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{6c9e0846-ef96-4d54-a0e1-9e4dc3f62903}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

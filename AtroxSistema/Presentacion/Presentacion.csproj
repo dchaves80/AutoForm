@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D972C82-6CB8-4756-9082-7CCDED31E1C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Presentacion.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="abAcercaDe.Designer.cs">
+      <DependentUpon>abAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmActualizarPrecioXCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarPrecioXCuenta.Designer.cs">
+      <DependentUpon>frmActualizarPrecioXCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticulos.Designer.cs">
+      <DependentUpon>frmArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCantidadCopíasImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCantidadCopíasImprimir.Designer.cs">
+      <DependentUpon>frmCantidadCopíasImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCuenta.Designer.cs">
+      <DependentUpon>frmCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresa.Designer.cs">
+      <DependentUpon>frmEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImpresoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImpresoras.Designer.cs">
+      <DependentUpon>frmImpresoras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimientos.Designer.cs">
+      <DependentUpon>frmMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoMovimiento.Designer.cs">
+      <DependentUpon>frmTipoMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTiposComprobantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTiposComprobantes.Designer.cs">
+      <DependentUpon>frmTiposComprobantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuncionesGlobales\Globales.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="abAcercaDe.resx">
+      <DependentUpon>abAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizarPrecioXCuenta.resx">
+      <DependentUpon>frmActualizarPrecioXCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArticulos.resx">
+      <DependentUpon>frmArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCantidadCopíasImprimir.resx">
+      <DependentUpon>frmCantidadCopíasImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCuenta.resx">
+      <DependentUpon>frmCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresa.resx">
+      <DependentUpon>frmEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImpresoras.resx">
+      <DependentUpon>frmImpresoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimientos.resx">
+      <DependentUpon>frmMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoMovimiento.resx">
+      <DependentUpon>frmTipoMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTiposComprobantes.resx">
+      <DependentUpon>frmTiposComprobantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="CS.reg" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{41ba4804-0e02-4de6-8607-cec954774da9}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{14FE9AAF-3446-423E-8B45-443279B55D80}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{f0f8b4a1-9d7f-4306-9594-ef728d58e12b}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{6c9e0846-ef96-4d54-a0e1-9e4dc3f62903}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reportes\Reportes.csproj">
+      <Project>{77b3bc8c-5f1f-4daa-8ed0-4642061dcf86}</Project>
+      <Name>Reportes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Impresora.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icoCuentas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icoListados.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)cs.reg" "$(ProjectDir)bin\debug\cs.reg" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
