@@ -162,11 +162,12 @@
     <EmbeddedResource Include="F02_Frente.resx">
       <DependentUpon>F02_Frente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F08_Dorso.rdlc" />
     <EmbeddedResource Include="F08_Dorso_Motovehiculo.resx">
       <DependentUpon>F08_Dorso_Motovehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F08_Dorso_Motovehiculo.rdlc" />
-    <EmbeddedResource Include="F08_Dorso.rdlc" />
+    <EmbeddedResource Include="F08_Dorsoauto.rdlc" />
     <EmbeddedResource Include="F08_Dorso.resx">
       <DependentUpon>F08_Dorso.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,7 +175,6 @@
     <EmbeddedResource Include="F08_Frente_Motovehiculo.resx">
       <DependentUpon>F08_Frente_Motovehiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="F08_Frente.rdlc" />
     <EmbeddedResource Include="F08_Frente.resx">
       <DependentUpon>F08_Frente.cs</DependentUpon>
     </EmbeddedResource>

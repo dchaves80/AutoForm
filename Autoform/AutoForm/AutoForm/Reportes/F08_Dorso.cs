@@ -357,13 +357,6 @@ string p_Orecibi
         private void reportViewer1_RenderingComplete(object sender, RenderingCompleteEventArgs e)
         {
 
-            if (reportViewer1.GetTotalPages() > 1)
-            {
-                MessageBox.Show("El reporte contiene mas de una página, esto puede ocasionar una impresión erronea en el reporte, reduzca el contenido de los campos que se encuentran al final del formulario o campos extensos como por ejemplo observaciones o documentacion extra", "Error en el reporte", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
-            }
-
-
 
         }
 

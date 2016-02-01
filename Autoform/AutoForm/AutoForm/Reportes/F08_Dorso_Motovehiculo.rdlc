@@ -2037,7 +2037,7 @@
         <Top>21.3235cm</Top>
         <Left>0.0475cm</Left>
         <Height>1.6848cm</Height>
-        <Width>18.93839cm</Width>
+        <Width>14.60304cm</Width>
         <ZIndex>72</ZIndex>
         <Style>
           <Border>
@@ -2177,7 +2177,7 @@
         <Top>24.52cm</Top>
         <Left>2.7975cm</Left>
         <Height>0.36188cm</Height>
-        <Width>5.62082cm</Width>
+        <Width>7.10779cm</Width>
         <ZIndex>77</ZIndex>
         <Style>
           <Border>
@@ -2205,7 +2205,7 @@
         <Top>27.21475cm</Top>
         <Left>4.4475cm</Left>
         <Height>0.36188cm</Height>
-        <Width>14.53839cm</Width>
+        <Width>10.25721cm</Width>
         <ZIndex>78</ZIndex>
         <Style>
           <Border>
@@ -2233,7 +2233,7 @@
         <Top>24cm</Top>
         <Left>2.0475cm</Left>
         <Height>0.38833cm</Height>
-        <Width>6.37082cm</Width>
+        <Width>7.85779cm</Width>
         <ZIndex>79</ZIndex>
         <Style>
           <Border>
@@ -2242,10 +2242,10 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>11.55789in</Height>
+    <Height>11.08914in</Height>
     <Style />
   </Body>
-  <Width>7.97258in</Width>
+  <Width>6.50601in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

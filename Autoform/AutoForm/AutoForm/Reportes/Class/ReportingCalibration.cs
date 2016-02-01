@@ -26,11 +26,11 @@ namespace Reportes.Class
         {
             //MessageBox.Show("ORIGINAL \n centimetros left:" + reportViewer1.Margin.Left.ToString() + "\n" + "centimetros top:" + reportViewer1.Margin.Top.ToString());
 
-            if (reportViewer1.GetTotalPages() > 1)
-            {
-                MessageBox.Show("El reporte contiene mas de una página, esto puede ocasionar una impresión erronea en el reporte, reduzca el contenido de los campos que se encuentran al final del formulario o campos extensos como por ejemplo observaciones o documentacion extra", "Error en el reporte", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                reportViewer1.ParentForm.Close();
-            }
+            //if (reportViewer1.GetTotalPages() > 1)
+            //{
+            //    MessageBox.Show("El reporte contiene mas de una página, esto puede ocasionar una impresión erronea en el reporte, reduzca el contenido de los campos que se encuentran al final del formulario o campos extensos como por ejemplo observaciones o documentacion extra", "Error en el reporte", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    reportViewer1.ParentForm.Close();
+            //}
 
 
 
