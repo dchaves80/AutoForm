@@ -1,0 +1,5 @@
+c:\Users\IRMA\Documents\Visual Studio 2012\Projects\bin\DNNModule6.dll
+c:\Users\IRMA\Documents\Visual Studio 2012\Projects\bin\DNNModule6.pdb
+c:\Users\IRMA\Documents\Visual Studio 2012\Projects\DNNModule6\DNNModule6\obj\Release\DNNModule6.dll
+c:\Users\IRMA\Documents\Visual Studio 2012\Projects\DNNModule6\DNNModule6\obj\Release\DNNModule6.pdb
+C:\Users\IRMA\Documents\Visual Studio 2012\Projects\DNNModule6\DNNModule6\obj\Release\DNNModule6.csprojResolveAssemblyReference.cache
