@@ -52,6 +52,35 @@ namespace Presentacion.Forms
             
         }
 
+        private void rdbAutomotor_CheckedChanged(object sender, EventArgs e)
+        {
+            CambiarEstadoTodo(this, true);
+            grp.Enabled = false;
+        }
+
+        private void CambiarEstadoTodo(Control p_ctrl, Boolean p_estado)
+        {
+            if (p_ctrl.Controls.Count > 0)
+            {
+                foreach (Control i_control in p_ctrl.Controls)
+                {
+                    if (i_control.Controls.Count > 0)
+                    {
+                        CambiarEstadoTodo(i_control, p_estado);
+
+                    }
+                    i_control.Enabled = p_estado;
+                }
+            }
+            p_ctrl.Enabled = p_estado;
+        }
+
+        private void rdbMotovehiculo_CheckedChanged(object sender, EventArgs e)
+        {
+            CambiarEstadoTodo(this, true);
+            grp.Enabled = false;
+        }
+
         
 
     }

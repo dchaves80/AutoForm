@@ -55,11 +55,23 @@
     </Compile>
     <Compile Include="Class\Medida.cs" />
     <Compile Include="Class\ReportingCalibration.cs" />
+    <Compile Include="F02_Dorso_Motovehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F02_Dorso_Motovehiculo.Designer.cs">
+      <DependentUpon>F02_Dorso_Motovehiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="F02_Dorso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="F02_Dorso.Designer.cs">
       <DependentUpon>F02_Dorso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F02_Frente_Motovehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F02_Frente_Motovehiculo.Designer.cs">
+      <DependentUpon>F02_Frente_Motovehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="F02_Frente.cs">
       <SubType>Form</SubType>
@@ -146,17 +158,21 @@
     <EmbeddedResource Include="Calibracion.resx">
       <DependentUpon>Calibracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="F02_Dorso - MargenesViyuya.rdlc">
+    <EmbeddedResource Include="F02_Dorso_Motovehiculo.rdlc">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="F02_Dorso - Lucida Console.rdlc">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="F02_Dorso_Motovehiculo.resx">
+      <DependentUpon>F02_Dorso_Motovehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F02_Dorso.rdlc">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="F02_Dorso.resx">
       <DependentUpon>F02_Dorso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F02_Frente_Motovehiculo.rdlc" />
+    <EmbeddedResource Include="F02_Frente_Motovehiculo.resx">
+      <DependentUpon>F02_Frente_Motovehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F02_Frente.rdlc" />
     <EmbeddedResource Include="F02_Frente.resx">
@@ -167,7 +183,6 @@
       <DependentUpon>F08_Dorso_Motovehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F08_Dorso_Motovehiculo.rdlc" />
-    <EmbeddedResource Include="F08_Dorsoauto.rdlc" />
     <EmbeddedResource Include="F08_Dorso.resx">
       <DependentUpon>F08_Dorso.cs</DependentUpon>
     </EmbeddedResource>

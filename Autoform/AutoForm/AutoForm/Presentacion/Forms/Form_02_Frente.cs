@@ -37,6 +37,23 @@ namespace Presentacion.Forms
             this.Height = this.Parent.Height;
         }
 
+
+        private void CambiarEstadoTodo(Control p_ctrl, Boolean p_estado)
+        {
+            if (p_ctrl.Controls.Count > 0)
+            {
+                foreach (Control i_control in p_ctrl.Controls)
+                {
+                    if (i_control.Controls.Count > 0)
+                    {
+                        CambiarEstadoTodo(i_control, p_estado);
+
+                    }
+                    i_control.Enabled = p_estado;
+                }
+            }
+            p_ctrl.Enabled = p_estado;
+        }
         void Parent_Resize(object sender, EventArgs e)
         {
             if (this.Parent != null)
@@ -47,6 +64,18 @@ namespace Presentacion.Forms
             {
                 Dispose();
             }
+        }
+
+        private void rdbAutomotor_CheckedChanged(object sender, EventArgs e)
+        {
+            CambiarEstadoTodo(this, true);
+            grp.Enabled = true;
+        }
+
+        private void rdbMotovehiculo_CheckedChanged(object sender, EventArgs e)
+        {
+            CambiarEstadoTodo(this, true);
+            grp.Enabled = true;
         }
     }
 }

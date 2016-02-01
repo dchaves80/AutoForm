@@ -165,6 +165,9 @@
             this.label52 = new System.Windows.Forms.Label();
             this.txtautorizadoa = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
+            this.grp = new System.Windows.Forms.GroupBox();
+            this.rdbAutomotor = new System.Windows.Forms.RadioButton();
+            this.rdbMotovehiculo = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -172,6 +175,7 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.grp.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -206,9 +210,10 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Enabled = false;
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(19, 70);
+            this.groupBox1.Location = new System.Drawing.Point(23, 126);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(723, 328);
             this.groupBox1.TabIndex = 0;
@@ -218,6 +223,7 @@
             // 
             // idtpinscripcion
             // 
+            this.idtpinscripcion.Enabled = false;
             this.idtpinscripcion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.idtpinscripcion.Location = new System.Drawing.Point(600, 260);
             this.idtpinscripcion.Name = "idtpinscripcion";
@@ -226,6 +232,7 @@
             // 
             // itxtdatosinscripcion
             // 
+            this.itxtdatosinscripcion.Enabled = false;
             this.itxtdatosinscripcion.Location = new System.Drawing.Point(341, 260);
             this.itxtdatosinscripcion.MaxLength = 50;
             this.itxtdatosinscripcion.Name = "itxtdatosinscripcion";
@@ -234,6 +241,7 @@
             // 
             // itxtpersonaeria
             // 
+            this.itxtpersonaeria.Enabled = false;
             this.itxtpersonaeria.Location = new System.Drawing.Point(341, 205);
             this.itxtpersonaeria.MaxLength = 50;
             this.itxtpersonaeria.Name = "itxtpersonaeria";
@@ -242,6 +250,7 @@
             // 
             // itxtautoridadopais
             // 
+            this.itxtautoridadopais.Enabled = false;
             this.itxtautoridadopais.Location = new System.Drawing.Point(530, 166);
             this.itxtautoridadopais.MaxLength = 20;
             this.itxtautoridadopais.Name = "itxtautoridadopais";
@@ -250,6 +259,7 @@
             // 
             // itxtnumerodocumento
             // 
+            this.itxtnumerodocumento.Enabled = false;
             this.itxtnumerodocumento.Location = new System.Drawing.Point(341, 166);
             this.itxtnumerodocumento.MaxLength = 10;
             this.itxtnumerodocumento.Name = "itxtnumerodocumento";
@@ -259,6 +269,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.Enabled = false;
             this.label14.Location = new System.Drawing.Point(587, 283);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(108, 26);
@@ -268,6 +279,7 @@
             // ichkextpasap
             // 
             this.ichkextpasap.AutoSize = true;
+            this.ichkextpasap.Enabled = false;
             this.ichkextpasap.Location = new System.Drawing.Point(631, 143);
             this.ichkextpasap.Name = "ichkextpasap";
             this.ichkextpasap.Size = new System.Drawing.Size(64, 17);
@@ -278,6 +290,7 @@
             // ichkextci
             // 
             this.ichkextci.AutoSize = true;
+            this.ichkextci.Enabled = false;
             this.ichkextci.Location = new System.Drawing.Point(590, 143);
             this.ichkextci.Name = "ichkextci";
             this.ichkextci.Size = new System.Drawing.Size(42, 17);
@@ -288,6 +301,7 @@
             // ichkextdni
             // 
             this.ichkextdni.AutoSize = true;
+            this.ichkextdni.Enabled = false;
             this.ichkextdni.Location = new System.Drawing.Point(530, 143);
             this.ichkextdni.Name = "ichkextdni";
             this.ichkextdni.Size = new System.Drawing.Size(54, 17);
@@ -298,6 +312,7 @@
             // ichklc
             // 
             this.ichklc.AutoSize = true;
+            this.ichklc.Enabled = false;
             this.ichklc.Location = new System.Drawing.Point(461, 142);
             this.ichklc.Name = "ichklc";
             this.ichklc.Size = new System.Drawing.Size(45, 17);
@@ -308,6 +323,7 @@
             // ichkle
             // 
             this.ichkle.AutoSize = true;
+            this.ichkle.Enabled = false;
             this.ichkle.Location = new System.Drawing.Point(402, 143);
             this.ichkle.Name = "ichkle";
             this.ichkle.Size = new System.Drawing.Size(45, 17);
@@ -318,6 +334,7 @@
             // ichkdni
             // 
             this.ichkdni.AutoSize = true;
+            this.ichkdni.Enabled = false;
             this.ichkdni.Location = new System.Drawing.Point(341, 143);
             this.ichkdni.Name = "ichkdni";
             this.ichkdni.Size = new System.Drawing.Size(54, 17);
@@ -327,6 +344,7 @@
             // 
             // itxtsecretaria
             // 
+            this.itxtsecretaria.Enabled = false;
             this.itxtsecretaria.Location = new System.Drawing.Point(41, 166);
             this.itxtsecretaria.MaxLength = 10;
             this.itxtsecretaria.Name = "itxtsecretaria";
@@ -335,6 +353,7 @@
             // 
             // itxtjuzgado
             // 
+            this.itxtjuzgado.Enabled = false;
             this.itxtjuzgado.Location = new System.Drawing.Point(41, 120);
             this.itxtjuzgado.MaxLength = 50;
             this.itxtjuzgado.Name = "itxtjuzgado";
@@ -343,6 +362,7 @@
             // 
             // itxtcondominioembargado
             // 
+            this.itxtcondominioembargado.Enabled = false;
             this.itxtcondominioembargado.Location = new System.Drawing.Point(341, 64);
             this.itxtcondominioembargado.MaxLength = 50;
             this.itxtcondominioembargado.Name = "itxtcondominioembargado";
@@ -351,6 +371,7 @@
             // 
             // itxtapellidonombretitular
             // 
+            this.itxtapellidonombretitular.Enabled = false;
             this.itxtapellidonombretitular.Location = new System.Drawing.Point(341, 26);
             this.itxtapellidonombretitular.MaxLength = 50;
             this.itxtapellidonombretitular.Name = "itxtapellidonombretitular";
@@ -359,6 +380,7 @@
             // 
             // idtpfechalevantamiento
             // 
+            this.idtpfechalevantamiento.Enabled = false;
             this.idtpfechalevantamiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.idtpfechalevantamiento.Location = new System.Drawing.Point(185, 80);
             this.idtpfechalevantamiento.Name = "idtpfechalevantamiento";
@@ -367,6 +389,7 @@
             // 
             // idtpfechamedida
             // 
+            this.idtpfechamedida.Enabled = false;
             this.idtpfechamedida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.idtpfechamedida.Location = new System.Drawing.Point(41, 80);
             this.idtpfechamedida.Name = "idtpfechamedida";
@@ -376,6 +399,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.Enabled = false;
             this.label13.Location = new System.Drawing.Point(365, 283);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(193, 13);
@@ -385,6 +409,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Enabled = false;
             this.label12.Location = new System.Drawing.Point(458, 230);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(123, 13);
@@ -394,6 +419,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Enabled = false;
             this.label11.Location = new System.Drawing.Point(536, 189);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(159, 13);
@@ -403,6 +429,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Enabled = false;
             this.label10.Location = new System.Drawing.Point(430, 87);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(177, 13);
@@ -412,6 +439,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Enabled = false;
             this.label9.Location = new System.Drawing.Point(365, 189);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(117, 13);
@@ -421,6 +449,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Enabled = false;
             this.label8.Location = new System.Drawing.Point(587, 120);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 13);
@@ -430,6 +459,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Enabled = false;
             this.label7.Location = new System.Drawing.Point(338, 120);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(154, 13);
@@ -439,6 +469,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Enabled = false;
             this.label6.Location = new System.Drawing.Point(139, 189);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 13);
@@ -448,6 +479,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Enabled = false;
             this.label5.Location = new System.Drawing.Point(144, 143);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
@@ -457,6 +489,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Enabled = false;
             this.label4.Location = new System.Drawing.Point(406, 49);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(224, 13);
@@ -466,6 +499,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Enabled = false;
             this.label3.Location = new System.Drawing.Point(182, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 39);
@@ -475,6 +509,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Enabled = false;
             this.label2.Location = new System.Drawing.Point(42, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 26);
@@ -488,7 +523,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(267, 25);
+            this.label1.Location = new System.Drawing.Point(271, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(234, 26);
             this.label1.TabIndex = 1;
@@ -532,8 +567,9 @@
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.txtjporcenataje);
+            this.groupBox2.Enabled = false;
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(19, 419);
+            this.groupBox2.Location = new System.Drawing.Point(23, 475);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(386, 454);
             this.groupBox2.TabIndex = 2;
@@ -542,6 +578,7 @@
             // 
             // jtxtsexo
             // 
+            this.jtxtsexo.Enabled = false;
             this.jtxtsexo.Location = new System.Drawing.Point(27, 96);
             this.jtxtsexo.MaxLength = 50;
             this.jtxtsexo.Name = "jtxtsexo";
@@ -550,6 +587,7 @@
             // 
             // jdtpfechainscripcion
             // 
+            this.jdtpfechainscripcion.Enabled = false;
             this.jdtpfechainscripcion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.jdtpfechainscripcion.Location = new System.Drawing.Point(243, 401);
             this.jdtpfechainscripcion.Name = "jdtpfechainscripcion";
@@ -558,6 +596,7 @@
             // 
             // jtxtdatosinscripcion
             // 
+            this.jtxtdatosinscripcion.Enabled = false;
             this.jtxtdatosinscripcion.Location = new System.Drawing.Point(25, 401);
             this.jtxtdatosinscripcion.MaxLength = 50;
             this.jtxtdatosinscripcion.Name = "jtxtdatosinscripcion";
@@ -566,6 +605,7 @@
             // 
             // jtxtpersoneria
             // 
+            this.jtxtpersoneria.Enabled = false;
             this.jtxtpersoneria.Location = new System.Drawing.Point(27, 362);
             this.jtxtpersoneria.MaxLength = 50;
             this.jtxtpersoneria.Name = "jtxtpersoneria";
@@ -574,6 +614,7 @@
             // 
             // jtxtnombreconyuge
             // 
+            this.jtxtnombreconyuge.Enabled = false;
             this.jtxtnombreconyuge.Location = new System.Drawing.Point(27, 322);
             this.jtxtnombreconyuge.MaxLength = 50;
             this.jtxtnombreconyuge.Name = "jtxtnombreconyuge";
@@ -583,6 +624,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.Enabled = false;
             this.label28.Location = new System.Drawing.Point(232, 425);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(108, 26);
@@ -592,6 +634,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
+            this.label27.Enabled = false;
             this.label27.Location = new System.Drawing.Point(26, 425);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(191, 13);
@@ -601,6 +644,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
+            this.label26.Enabled = false;
             this.label26.Location = new System.Drawing.Point(121, 385);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(125, 13);
@@ -610,6 +654,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.Enabled = false;
             this.label25.Location = new System.Drawing.Point(102, 345);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(163, 13);
@@ -618,6 +663,7 @@
             // 
             // jtxtnupcianumero
             // 
+            this.jtxtnupcianumero.Enabled = false;
             this.jtxtnupcianumero.Location = new System.Drawing.Point(292, 264);
             this.jtxtnupcianumero.MaxLength = 8;
             this.jtxtnupcianumero.Name = "jtxtnupcianumero";
@@ -627,6 +673,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.Enabled = false;
             this.label24.Location = new System.Drawing.Point(284, 296);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(56, 13);
@@ -636,6 +683,7 @@
             // jchkdivor
             // 
             this.jchkdivor.AutoSize = true;
+            this.jchkdivor.Enabled = false;
             this.jchkdivor.Location = new System.Drawing.Point(222, 279);
             this.jchkdivor.Name = "jchkdivor";
             this.jchkdivor.Size = new System.Drawing.Size(54, 17);
@@ -646,6 +694,7 @@
             // jchkviudo
             // 
             this.jchkviudo.AutoSize = true;
+            this.jchkviudo.Enabled = false;
             this.jchkviudo.Location = new System.Drawing.Point(222, 262);
             this.jchkviudo.Name = "jchkviudo";
             this.jchkviudo.Size = new System.Drawing.Size(53, 17);
@@ -656,6 +705,7 @@
             // jchksoltero
             // 
             this.jchksoltero.AutoSize = true;
+            this.jchksoltero.Enabled = false;
             this.jchksoltero.Location = new System.Drawing.Point(142, 278);
             this.jchksoltero.Name = "jchksoltero";
             this.jchksoltero.Size = new System.Drawing.Size(59, 17);
@@ -666,6 +716,7 @@
             // jchkcasado
             // 
             this.jchkcasado.AutoSize = true;
+            this.jchkcasado.Enabled = false;
             this.jchkcasado.Location = new System.Drawing.Point(142, 261);
             this.jchkcasado.Name = "jchkcasado";
             this.jchkcasado.Size = new System.Drawing.Size(62, 17);
@@ -676,6 +727,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.Enabled = false;
             this.label23.Location = new System.Drawing.Point(138, 296);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(134, 13);
@@ -684,6 +736,7 @@
             // 
             // jdtpfechanacimiento
             // 
+            this.jdtpfechanacimiento.Enabled = false;
             this.jdtpfechanacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.jdtpfechanacimiento.Location = new System.Drawing.Point(27, 269);
             this.jdtpfechanacimiento.Name = "jdtpfechanacimiento";
@@ -693,6 +746,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.Enabled = false;
             this.label22.Location = new System.Drawing.Point(22, 296);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(110, 13);
@@ -701,6 +755,7 @@
             // 
             // jtxtpais
             // 
+            this.jtxtpais.Enabled = false;
             this.jtxtpais.Location = new System.Drawing.Point(198, 216);
             this.jtxtpais.MaxLength = 10;
             this.jtxtpais.Name = "jtxtpais";
@@ -709,6 +764,7 @@
             // 
             // jtxtnumerodocumento
             // 
+            this.jtxtnumerodocumento.Enabled = false;
             this.jtxtnumerodocumento.Location = new System.Drawing.Point(27, 216);
             this.jtxtnumerodocumento.MaxLength = 10;
             this.jtxtnumerodocumento.Name = "jtxtnumerodocumento";
@@ -718,6 +774,7 @@
             // jchkextpasap
             // 
             this.jchkextpasap.AutoSize = true;
+            this.jchkextpasap.Enabled = false;
             this.jchkextpasap.Location = new System.Drawing.Point(283, 193);
             this.jchkextpasap.Name = "jchkextpasap";
             this.jchkextpasap.Size = new System.Drawing.Size(64, 17);
@@ -728,6 +785,7 @@
             // jchkextci
             // 
             this.jchkextci.AutoSize = true;
+            this.jchkextci.Enabled = false;
             this.jchkextci.Location = new System.Drawing.Point(247, 193);
             this.jchkextci.Name = "jchkextci";
             this.jchkextci.Size = new System.Drawing.Size(42, 17);
@@ -738,6 +796,7 @@
             // jchkextdni
             // 
             this.jchkextdni.AutoSize = true;
+            this.jchkextdni.Enabled = false;
             this.jchkextdni.Location = new System.Drawing.Point(197, 193);
             this.jchkextdni.Name = "jchkextdni";
             this.jchkextdni.Size = new System.Drawing.Size(54, 17);
@@ -748,6 +807,7 @@
             // jchklc
             // 
             this.jchklc.AutoSize = true;
+            this.jchklc.Enabled = false;
             this.jchklc.Location = new System.Drawing.Point(126, 193);
             this.jchklc.Name = "jchklc";
             this.jchklc.Size = new System.Drawing.Size(45, 17);
@@ -758,6 +818,7 @@
             // jchkle
             // 
             this.jchkle.AutoSize = true;
+            this.jchkle.Enabled = false;
             this.jchkle.Location = new System.Drawing.Point(78, 193);
             this.jchkle.Name = "jchkle";
             this.jchkle.Size = new System.Drawing.Size(45, 17);
@@ -768,6 +829,7 @@
             // jchkdni
             // 
             this.jchkdni.AutoSize = true;
+            this.jchkdni.Enabled = false;
             this.jchkdni.Location = new System.Drawing.Point(27, 193);
             this.jchkdni.Name = "jchkdni";
             this.jchkdni.Size = new System.Drawing.Size(54, 17);
@@ -778,6 +840,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.Enabled = false;
             this.label18.Location = new System.Drawing.Point(195, 239);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(159, 13);
@@ -787,6 +850,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.Enabled = false;
             this.label19.Location = new System.Drawing.Point(33, 239);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(117, 13);
@@ -796,6 +860,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.Enabled = false;
             this.label20.Location = new System.Drawing.Point(245, 170);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(59, 13);
@@ -805,6 +870,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.Enabled = false;
             this.label21.Location = new System.Drawing.Point(23, 170);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(154, 13);
@@ -813,6 +879,7 @@
             // 
             // jcalle
             // 
+            this.jcalle.Enabled = false;
             this.jcalle.Location = new System.Drawing.Point(27, 124);
             this.jcalle.MaxLength = 100;
             this.jcalle.Name = "jcalle";
@@ -822,6 +889,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.Enabled = false;
             this.label17.Location = new System.Drawing.Point(112, 147);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(143, 13);
@@ -830,6 +898,7 @@
             // 
             // jtxtapellidonombre
             // 
+            this.jtxtapellidonombre.Enabled = false;
             this.jtxtapellidonombre.Location = new System.Drawing.Point(27, 49);
             this.jtxtapellidonombre.MaxLength = 50;
             this.jtxtapellidonombre.Name = "jtxtapellidonombre";
@@ -839,6 +908,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.Enabled = false;
             this.label16.Location = new System.Drawing.Point(94, 72);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(181, 13);
@@ -848,6 +918,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.Enabled = false;
             this.label15.Location = new System.Drawing.Point(165, 20);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(15, 13);
@@ -856,6 +927,7 @@
             // 
             // txtjporcenataje
             // 
+            this.txtjporcenataje.Enabled = false;
             this.txtjporcenataje.Location = new System.Drawing.Point(27, 16);
             this.txtjporcenataje.MaxLength = 5;
             this.txtjporcenataje.Name = "txtjporcenataje";
@@ -900,8 +972,9 @@
             this.groupBox3.Controls.Add(this.label41);
             this.groupBox3.Controls.Add(this.label42);
             this.groupBox3.Controls.Add(this.txtkporcentaje);
+            this.groupBox3.Enabled = false;
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(379, 419);
+            this.groupBox3.Location = new System.Drawing.Point(383, 475);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(363, 454);
             this.groupBox3.TabIndex = 3;
@@ -910,6 +983,7 @@
             // 
             // txtksexo
             // 
+            this.txtksexo.Enabled = false;
             this.txtksexo.Location = new System.Drawing.Point(32, 96);
             this.txtksexo.MaxLength = 50;
             this.txtksexo.Name = "txtksexo";
@@ -918,6 +992,7 @@
             // 
             // dtpkfechainscripcion
             // 
+            this.dtpkfechainscripcion.Enabled = false;
             this.dtpkfechainscripcion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpkfechainscripcion.Location = new System.Drawing.Point(248, 402);
             this.dtpkfechainscripcion.Name = "dtpkfechainscripcion";
@@ -926,6 +1001,7 @@
             // 
             // txtkdatosinscripcion
             // 
+            this.txtkdatosinscripcion.Enabled = false;
             this.txtkdatosinscripcion.Location = new System.Drawing.Point(30, 402);
             this.txtkdatosinscripcion.MaxLength = 50;
             this.txtkdatosinscripcion.Name = "txtkdatosinscripcion";
@@ -934,6 +1010,7 @@
             // 
             // txtkkpersoneria
             // 
+            this.txtkkpersoneria.Enabled = false;
             this.txtkkpersoneria.Location = new System.Drawing.Point(32, 363);
             this.txtkkpersoneria.MaxLength = 50;
             this.txtkkpersoneria.Name = "txtkkpersoneria";
@@ -942,6 +1019,7 @@
             // 
             // txtknombreconyuge
             // 
+            this.txtknombreconyuge.Enabled = false;
             this.txtknombreconyuge.Location = new System.Drawing.Point(32, 323);
             this.txtknombreconyuge.MaxLength = 50;
             this.txtknombreconyuge.Name = "txtknombreconyuge";
@@ -951,6 +1029,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
+            this.label29.Enabled = false;
             this.label29.Location = new System.Drawing.Point(237, 426);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(108, 26);
@@ -960,6 +1039,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
+            this.label30.Enabled = false;
             this.label30.Location = new System.Drawing.Point(31, 426);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(191, 13);
@@ -969,6 +1049,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.Enabled = false;
             this.label31.Location = new System.Drawing.Point(126, 386);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(125, 13);
@@ -978,6 +1059,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
+            this.label32.Enabled = false;
             this.label32.Location = new System.Drawing.Point(107, 346);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(163, 13);
@@ -986,6 +1068,7 @@
             // 
             // txtknupcianumero
             // 
+            this.txtknupcianumero.Enabled = false;
             this.txtknupcianumero.Location = new System.Drawing.Point(297, 265);
             this.txtknupcianumero.MaxLength = 8;
             this.txtknupcianumero.Name = "txtknupcianumero";
@@ -995,6 +1078,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
+            this.label33.Enabled = false;
             this.label33.Location = new System.Drawing.Point(289, 297);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(56, 13);
@@ -1004,6 +1088,7 @@
             // chkkdivor
             // 
             this.chkkdivor.AutoSize = true;
+            this.chkkdivor.Enabled = false;
             this.chkkdivor.Location = new System.Drawing.Point(227, 280);
             this.chkkdivor.Name = "chkkdivor";
             this.chkkdivor.Size = new System.Drawing.Size(54, 17);
@@ -1014,6 +1099,7 @@
             // chkkviudo
             // 
             this.chkkviudo.AutoSize = true;
+            this.chkkviudo.Enabled = false;
             this.chkkviudo.Location = new System.Drawing.Point(227, 263);
             this.chkkviudo.Name = "chkkviudo";
             this.chkkviudo.Size = new System.Drawing.Size(53, 17);
@@ -1024,6 +1110,7 @@
             // chkksoltero
             // 
             this.chkksoltero.AutoSize = true;
+            this.chkksoltero.Enabled = false;
             this.chkksoltero.Location = new System.Drawing.Point(147, 279);
             this.chkksoltero.Name = "chkksoltero";
             this.chkksoltero.Size = new System.Drawing.Size(59, 17);
@@ -1034,6 +1121,7 @@
             // chkkcasado
             // 
             this.chkkcasado.AutoSize = true;
+            this.chkkcasado.Enabled = false;
             this.chkkcasado.Location = new System.Drawing.Point(147, 262);
             this.chkkcasado.Name = "chkkcasado";
             this.chkkcasado.Size = new System.Drawing.Size(62, 17);
@@ -1044,6 +1132,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
+            this.label34.Enabled = false;
             this.label34.Location = new System.Drawing.Point(143, 297);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(134, 13);
@@ -1052,6 +1141,7 @@
             // 
             // dtpkfechanacimiento
             // 
+            this.dtpkfechanacimiento.Enabled = false;
             this.dtpkfechanacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpkfechanacimiento.Location = new System.Drawing.Point(32, 270);
             this.dtpkfechanacimiento.Name = "dtpkfechanacimiento";
@@ -1061,6 +1151,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
+            this.label35.Enabled = false;
             this.label35.Location = new System.Drawing.Point(27, 297);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(110, 13);
@@ -1069,6 +1160,7 @@
             // 
             // txtkautoridad
             // 
+            this.txtkautoridad.Enabled = false;
             this.txtkautoridad.Location = new System.Drawing.Point(203, 217);
             this.txtkautoridad.MaxLength = 10;
             this.txtkautoridad.Name = "txtkautoridad";
@@ -1077,6 +1169,7 @@
             // 
             // txtknumerodocumento
             // 
+            this.txtknumerodocumento.Enabled = false;
             this.txtknumerodocumento.Location = new System.Drawing.Point(32, 217);
             this.txtknumerodocumento.MaxLength = 10;
             this.txtknumerodocumento.Name = "txtknumerodocumento";
@@ -1086,6 +1179,7 @@
             // chkkpasap
             // 
             this.chkkpasap.AutoSize = true;
+            this.chkkpasap.Enabled = false;
             this.chkkpasap.Location = new System.Drawing.Point(288, 194);
             this.chkkpasap.Name = "chkkpasap";
             this.chkkpasap.Size = new System.Drawing.Size(64, 17);
@@ -1096,6 +1190,7 @@
             // chkkci
             // 
             this.chkkci.AutoSize = true;
+            this.chkkci.Enabled = false;
             this.chkkci.Location = new System.Drawing.Point(252, 194);
             this.chkkci.Name = "chkkci";
             this.chkkci.Size = new System.Drawing.Size(42, 17);
@@ -1106,6 +1201,7 @@
             // chkkextdni
             // 
             this.chkkextdni.AutoSize = true;
+            this.chkkextdni.Enabled = false;
             this.chkkextdni.Location = new System.Drawing.Point(202, 194);
             this.chkkextdni.Name = "chkkextdni";
             this.chkkextdni.Size = new System.Drawing.Size(54, 17);
@@ -1116,6 +1212,7 @@
             // chkklc
             // 
             this.chkklc.AutoSize = true;
+            this.chkklc.Enabled = false;
             this.chkklc.Location = new System.Drawing.Point(131, 194);
             this.chkklc.Name = "chkklc";
             this.chkklc.Size = new System.Drawing.Size(45, 17);
@@ -1126,6 +1223,7 @@
             // chkkle
             // 
             this.chkkle.AutoSize = true;
+            this.chkkle.Enabled = false;
             this.chkkle.Location = new System.Drawing.Point(83, 194);
             this.chkkle.Name = "chkkle";
             this.chkkle.Size = new System.Drawing.Size(45, 17);
@@ -1136,6 +1234,7 @@
             // chkkdninativos
             // 
             this.chkkdninativos.AutoSize = true;
+            this.chkkdninativos.Enabled = false;
             this.chkkdninativos.Location = new System.Drawing.Point(32, 194);
             this.chkkdninativos.Name = "chkkdninativos";
             this.chkkdninativos.Size = new System.Drawing.Size(54, 17);
@@ -1146,6 +1245,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
+            this.label36.Enabled = false;
             this.label36.Location = new System.Drawing.Point(200, 240);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(159, 13);
@@ -1155,6 +1255,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
+            this.label37.Enabled = false;
             this.label37.Location = new System.Drawing.Point(38, 240);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(117, 13);
@@ -1164,6 +1265,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
+            this.label38.Enabled = false;
             this.label38.Location = new System.Drawing.Point(250, 171);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(59, 13);
@@ -1173,6 +1275,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
+            this.label39.Enabled = false;
             this.label39.Location = new System.Drawing.Point(28, 171);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(154, 13);
@@ -1181,6 +1284,7 @@
             // 
             // txtkcalle
             // 
+            this.txtkcalle.Enabled = false;
             this.txtkcalle.Location = new System.Drawing.Point(32, 125);
             this.txtkcalle.MaxLength = 100;
             this.txtkcalle.Name = "txtkcalle";
@@ -1190,6 +1294,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
+            this.label40.Enabled = false;
             this.label40.Location = new System.Drawing.Point(117, 148);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(143, 13);
@@ -1198,6 +1303,7 @@
             // 
             // txtkapellidoynombre
             // 
+            this.txtkapellidoynombre.Enabled = false;
             this.txtkapellidoynombre.Location = new System.Drawing.Point(32, 50);
             this.txtkapellidoynombre.MaxLength = 50;
             this.txtkapellidoynombre.Name = "txtkapellidoynombre";
@@ -1207,6 +1313,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
+            this.label41.Enabled = false;
             this.label41.Location = new System.Drawing.Point(99, 73);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(181, 13);
@@ -1216,6 +1323,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
+            this.label42.Enabled = false;
             this.label42.Location = new System.Drawing.Point(170, 21);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(15, 13);
@@ -1224,6 +1332,7 @@
             // 
             // txtkporcentaje
             // 
+            this.txtkporcentaje.Enabled = false;
             this.txtkporcentaje.Location = new System.Drawing.Point(32, 17);
             this.txtkporcentaje.MaxLength = 5;
             this.txtkporcentaje.Name = "txtkporcentaje";
@@ -1241,8 +1350,9 @@
             this.groupBox4.Controls.Add(this.label44);
             this.groupBox4.Controls.Add(this.label43);
             this.groupBox4.Controls.Add(this.txtconstanciasvarias);
+            this.groupBox4.Enabled = false;
             this.groupBox4.ForeColor = System.Drawing.Color.Black;
-            this.groupBox4.Location = new System.Drawing.Point(19, 879);
+            this.groupBox4.Location = new System.Drawing.Point(23, 935);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(723, 193);
             this.groupBox4.TabIndex = 4;
@@ -1252,6 +1362,7 @@
             // 
             // ltxtrpachasisasignado
             // 
+            this.ltxtrpachasisasignado.Enabled = false;
             this.ltxtrpachasisasignado.Location = new System.Drawing.Point(523, 153);
             this.ltxtrpachasisasignado.MaxLength = 50;
             this.ltxtrpachasisasignado.Name = "ltxtrpachasisasignado";
@@ -1260,6 +1371,7 @@
             // 
             // ltxtrpamotorasignado
             // 
+            this.ltxtrpamotorasignado.Enabled = false;
             this.ltxtrpamotorasignado.Location = new System.Drawing.Point(197, 153);
             this.ltxtrpamotorasignado.MaxLength = 50;
             this.ltxtrpamotorasignado.Name = "ltxtrpamotorasignado";
@@ -1268,6 +1380,7 @@
             // 
             // ldtpfechatransferencia
             // 
+            this.ldtpfechatransferencia.Enabled = false;
             this.ldtpfechatransferencia.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.ldtpfechatransferencia.Location = new System.Drawing.Point(198, 127);
             this.ldtpfechatransferencia.Name = "ldtpfechatransferencia";
@@ -1276,6 +1389,7 @@
             // 
             // ltxtapellidonombrevendedor
             // 
+            this.ltxtapellidonombrevendedor.Enabled = false;
             this.ltxtapellidonombrevendedor.Location = new System.Drawing.Point(198, 101);
             this.ltxtapellidonombrevendedor.MaxLength = 50;
             this.ltxtapellidonombrevendedor.Name = "ltxtapellidonombrevendedor";
@@ -1285,6 +1399,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
+            this.label46.Enabled = false;
             this.label46.Location = new System.Drawing.Point(23, 134);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(137, 13);
@@ -1294,6 +1409,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
+            this.label45.Enabled = false;
             this.label45.Location = new System.Drawing.Point(23, 160);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(121, 13);
@@ -1303,6 +1419,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
+            this.label44.Enabled = false;
             this.label44.Location = new System.Drawing.Point(399, 160);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(125, 13);
@@ -1312,6 +1429,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
+            this.label43.Enabled = false;
             this.label43.Location = new System.Drawing.Point(23, 108);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(167, 13);
@@ -1331,8 +1449,9 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.txtobservaciones);
+            this.groupBox5.Enabled = false;
             this.groupBox5.ForeColor = System.Drawing.Color.Black;
-            this.groupBox5.Location = new System.Drawing.Point(19, 1078);
+            this.groupBox5.Location = new System.Drawing.Point(23, 1134);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(723, 98);
             this.groupBox5.TabIndex = 5;
@@ -1341,6 +1460,7 @@
             // 
             // txtobservaciones
             // 
+            this.txtobservaciones.Enabled = false;
             this.txtobservaciones.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtobservaciones.Location = new System.Drawing.Point(23, 28);
             this.txtobservaciones.MaxLength = 200;
@@ -1357,8 +1477,9 @@
             this.groupBox6.Controls.Add(this.label49);
             this.groupBox6.Controls.Add(this.label48);
             this.groupBox6.Controls.Add(this.label47);
+            this.groupBox6.Enabled = false;
             this.groupBox6.ForeColor = System.Drawing.Color.Black;
-            this.groupBox6.Location = new System.Drawing.Point(19, 1182);
+            this.groupBox6.Location = new System.Drawing.Point(23, 1238);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(723, 88);
             this.groupBox6.TabIndex = 6;
@@ -1369,6 +1490,7 @@
             // label50
             // 
             this.label50.AutoSize = true;
+            this.label50.Enabled = false;
             this.label50.Location = new System.Drawing.Point(486, 40);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(223, 13);
@@ -1377,6 +1499,7 @@
             // 
             // dtpMfecha
             // 
+            this.dtpMfecha.Enabled = false;
             this.dtpMfecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpMfecha.Location = new System.Drawing.Point(310, 34);
             this.dtpMfecha.Name = "dtpMfecha";
@@ -1385,6 +1508,7 @@
             // 
             // txtlugar
             // 
+            this.txtlugar.Enabled = false;
             this.txtlugar.Location = new System.Drawing.Point(25, 34);
             this.txtlugar.MaxLength = 50;
             this.txtlugar.Name = "txtlugar";
@@ -1394,6 +1518,7 @@
             // label49
             // 
             this.label49.AutoSize = true;
+            this.label49.Enabled = false;
             this.label49.Location = new System.Drawing.Point(536, 63);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(142, 13);
@@ -1403,6 +1528,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
+            this.label48.Enabled = false;
             this.label48.Location = new System.Drawing.Point(340, 63);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(37, 13);
@@ -1412,6 +1538,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
+            this.label47.Enabled = false;
             this.label47.Location = new System.Drawing.Point(99, 63);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(34, 13);
@@ -1430,8 +1557,9 @@
             this.groupBox7.Controls.Add(this.label52);
             this.groupBox7.Controls.Add(this.txtautorizadoa);
             this.groupBox7.Controls.Add(this.label51);
+            this.groupBox7.Enabled = false;
             this.groupBox7.ForeColor = System.Drawing.Color.Black;
-            this.groupBox7.Location = new System.Drawing.Point(19, 1276);
+            this.groupBox7.Location = new System.Drawing.Point(23, 1332);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(723, 151);
             this.groupBox7.TabIndex = 7;
@@ -1441,6 +1569,7 @@
             // label58
             // 
             this.label58.AutoSize = true;
+            this.label58.Enabled = false;
             this.label58.Location = new System.Drawing.Point(444, 104);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(265, 13);
@@ -1450,6 +1579,7 @@
             // label57
             // 
             this.label57.AutoSize = true;
+            this.label57.Enabled = false;
             this.label57.Location = new System.Drawing.Point(488, 117);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(179, 13);
@@ -1459,6 +1589,7 @@
             // label56
             // 
             this.label56.AutoSize = true;
+            this.label56.Enabled = false;
             this.label56.Location = new System.Drawing.Point(22, 104);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(265, 13);
@@ -1468,6 +1599,7 @@
             // label55
             // 
             this.label55.AutoSize = true;
+            this.label55.Enabled = false;
             this.label55.Location = new System.Drawing.Point(94, 117);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(104, 13);
@@ -1477,6 +1609,7 @@
             // label54
             // 
             this.label54.AutoSize = true;
+            this.label54.Enabled = false;
             this.label54.Location = new System.Drawing.Point(444, 50);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(265, 13);
@@ -1486,6 +1619,7 @@
             // label53
             // 
             this.label53.AutoSize = true;
+            this.label53.Enabled = false;
             this.label53.Location = new System.Drawing.Point(527, 63);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(107, 13);
@@ -1494,6 +1628,7 @@
             // 
             // txttipodocumentonumero
             // 
+            this.txttipodocumentonumero.Enabled = false;
             this.txttipodocumentonumero.Location = new System.Drawing.Point(478, 18);
             this.txttipodocumentonumero.MaxLength = 50;
             this.txttipodocumentonumero.Name = "txttipodocumentonumero";
@@ -1503,6 +1638,7 @@
             // label52
             // 
             this.label52.AutoSize = true;
+            this.label52.Enabled = false;
             this.label52.Location = new System.Drawing.Point(355, 25);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(117, 13);
@@ -1511,6 +1647,7 @@
             // 
             // txtautorizadoa
             // 
+            this.txtautorizadoa.Enabled = false;
             this.txtautorizadoa.Location = new System.Drawing.Point(90, 18);
             this.txtautorizadoa.MaxLength = 50;
             this.txtautorizadoa.Name = "txtautorizadoa";
@@ -1520,17 +1657,56 @@
             // label51
             // 
             this.label51.AutoSize = true;
+            this.label51.Enabled = false;
             this.label51.Location = new System.Drawing.Point(22, 25);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(58, 13);
             this.label51.TabIndex = 1;
             this.label51.Text = "Autorizo A:";
             // 
+            // grp
+            // 
+            this.grp.Controls.Add(this.rdbAutomotor);
+            this.grp.Controls.Add(this.rdbMotovehiculo);
+            this.grp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grp.Location = new System.Drawing.Point(23, 55);
+            this.grp.Name = "grp";
+            this.grp.Size = new System.Drawing.Size(125, 65);
+            this.grp.TabIndex = 16;
+            this.grp.TabStop = false;
+            // 
+            // rdbAutomotor
+            // 
+            this.rdbAutomotor.AutoSize = true;
+            this.rdbAutomotor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rdbAutomotor.Location = new System.Drawing.Point(20, 18);
+            this.rdbAutomotor.Name = "rdbAutomotor";
+            this.rdbAutomotor.Size = new System.Drawing.Size(73, 17);
+            this.rdbAutomotor.TabIndex = 16;
+            this.rdbAutomotor.TabStop = true;
+            this.rdbAutomotor.Text = "Automotor";
+            this.rdbAutomotor.UseVisualStyleBackColor = true;
+            this.rdbAutomotor.CheckedChanged += new System.EventHandler(this.rdbAutomotor_CheckedChanged);
+            // 
+            // rdbMotovehiculo
+            // 
+            this.rdbMotovehiculo.AutoSize = true;
+            this.rdbMotovehiculo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rdbMotovehiculo.Location = new System.Drawing.Point(20, 37);
+            this.rdbMotovehiculo.Name = "rdbMotovehiculo";
+            this.rdbMotovehiculo.Size = new System.Drawing.Size(89, 17);
+            this.rdbMotovehiculo.TabIndex = 17;
+            this.rdbMotovehiculo.TabStop = true;
+            this.rdbMotovehiculo.Text = "Motovehiculo";
+            this.rdbMotovehiculo.UseVisualStyleBackColor = true;
+            this.rdbMotovehiculo.CheckedChanged += new System.EventHandler(this.rdbMotovehiculo_CheckedChanged);
+            // 
             // Form_02_Dorso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(195)))));
+            this.Controls.Add(this.grp);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -1540,7 +1716,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form_02_Dorso";
-            this.Size = new System.Drawing.Size(779, 1451);
+            this.Size = new System.Drawing.Size(779, 1496);
             this.Load += new System.EventHandler(this.Form_02_Dorso_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1556,6 +1732,8 @@
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.grp.ResumeLayout(false);
+            this.grp.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1699,6 +1877,9 @@
         public System.Windows.Forms.Label label51;
         public System.Windows.Forms.TextBox jtxtsexo;
         public System.Windows.Forms.TextBox txtksexo;
+        private System.Windows.Forms.GroupBox grp;
+        public System.Windows.Forms.RadioButton rdbAutomotor;
+        public System.Windows.Forms.RadioButton rdbMotovehiculo;
 
     }
 }
