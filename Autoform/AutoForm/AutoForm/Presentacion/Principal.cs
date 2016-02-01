@@ -193,7 +193,18 @@ namespace Presentacion
                     TextBox _TB = (TextBox)p_control;
                     if (_TB.Text == "")
                     {
-                        _TB.Text = " ";
+
+
+                        if (_TB.Tag == null)
+                        {
+
+                            _TB.Text = " ";
+                        }
+                        else 
+                        {
+                            _TB.Text = _TB.Tag.ToString();
+                        }
+                       
                     }
                     else
                     {
@@ -1149,7 +1160,7 @@ namespace Presentacion
         private void abrir02_frente()
         {
             Presentacion.Forms.Form_02_Frente MYFORM = (Presentacion.Forms.Form_02_Frente)CurrentForm;
-            MYFORM._LC.EstablecerMargen();
+            MYFORM._LC.EstablecerMargen(35);
             CheckEmptyFields(MYFORM);
 
             if (MYFORM.rdbAutomotor.Checked == true)

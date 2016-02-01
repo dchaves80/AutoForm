@@ -377,6 +377,7 @@
             this.itxtapellidonombretitular.Name = "itxtapellidonombretitular";
             this.itxtapellidonombretitular.Size = new System.Drawing.Size(354, 20);
             this.itxtapellidonombretitular.TabIndex = 15;
+            this.itxtapellidonombretitular.Tag = "";
             // 
             // idtpfechalevantamiento
             // 

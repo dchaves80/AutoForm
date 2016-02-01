@@ -298,6 +298,7 @@
             this.txtAPrecioCompra.Name = "txtAPrecioCompra";
             this.txtAPrecioCompra.Size = new System.Drawing.Size(205, 20);
             this.txtAPrecioCompra.TabIndex = 4;
+            this.txtAPrecioCompra.Tag = "No Posee";
             // 
             // txtALugar
             // 

@@ -38,6 +38,29 @@ namespace Presentacion.Extras
             }
         }
 
+        public void EstablecerMargen(int lineas)
+        {
+
+            string Spaces = "";
+
+            for (int a = 1; a < lineas; a++) 
+            {
+                Spaces = Spaces + " ";
+            }
+
+                if (!_TB.Text.Contains(Spaces) && _margeninicial == true)
+                {
+                    _TB.Text.Trim();
+                    _TB.Text = Spaces + _TB.Text;
+                    MessageBox.Show("Se establecio un margen inicial para este campo...");
+                }
+                else
+                {
+
+                }
+        }
+
+
         void _ptb_KeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
         {
 

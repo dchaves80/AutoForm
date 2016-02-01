@@ -23,7 +23,7 @@ namespace Presentacion.Forms
 
         private void Form_02_Frente_Load(object sender, EventArgs e)
         {
-            _LC = new Extras.LinesControl(txtdeclaraciones, true,500,5);
+            _LC = new Extras.LinesControl(txtdeclaraciones, true,500,3);
             this.MinimumSize = this.Size;
             this.Parent.Resize += Parent_Resize;
             
@@ -70,12 +70,16 @@ namespace Presentacion.Forms
         {
             CambiarEstadoTodo(this, true);
             grp.Enabled = true;
+            grpcargo.Enabled = false;
+            grparancel.Enabled = false;
         }
 
         private void rdbMotovehiculo_CheckedChanged(object sender, EventArgs e)
         {
             CambiarEstadoTodo(this, true);
             grp.Enabled = true;
+            grpcargo.Enabled = false;
+            grparancel.Enabled = false;
         }
     }
 }

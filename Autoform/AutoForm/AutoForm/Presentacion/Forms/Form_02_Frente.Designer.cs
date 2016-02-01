@@ -33,10 +33,10 @@
             this.txtdominio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grpcargo = new System.Windows.Forms.GroupBox();
             this.txtcargo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.grparancel = new System.Windows.Forms.GroupBox();
             this.txtarancelmonto = new System.Windows.Forms.TextBox();
             this.txtarancelnumero = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -115,8 +115,8 @@
             this.rdbAutomotor = new System.Windows.Forms.RadioButton();
             this.rdbMotovehiculo = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.grpcargo.SuspendLayout();
+            this.grparancel.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -180,17 +180,17 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "FORMULARIO 02 FRENTE";
             // 
-            // groupBox2
+            // grpcargo
             // 
-            this.groupBox2.Controls.Add(this.txtcargo);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(298, 111);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(224, 83);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "\"B\" CARGO";
+            this.grpcargo.Controls.Add(this.txtcargo);
+            this.grpcargo.Controls.Add(this.label4);
+            this.grpcargo.Enabled = false;
+            this.grpcargo.Location = new System.Drawing.Point(298, 111);
+            this.grpcargo.Name = "grpcargo";
+            this.grpcargo.Size = new System.Drawing.Size(224, 83);
+            this.grpcargo.TabIndex = 2;
+            this.grpcargo.TabStop = false;
+            this.grpcargo.Text = "\"B\" CARGO";
             // 
             // txtcargo
             // 
@@ -211,19 +211,19 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Codigo de registro.";
             // 
-            // groupBox3
+            // grparancel
             // 
-            this.groupBox3.Controls.Add(this.txtarancelmonto);
-            this.groupBox3.Controls.Add(this.txtarancelnumero);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Enabled = false;
-            this.groupBox3.Location = new System.Drawing.Point(568, 111);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(236, 83);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "\"C\" ARANCEL";
+            this.grparancel.Controls.Add(this.txtarancelmonto);
+            this.grparancel.Controls.Add(this.txtarancelnumero);
+            this.grparancel.Controls.Add(this.label6);
+            this.grparancel.Controls.Add(this.label5);
+            this.grparancel.Enabled = false;
+            this.grparancel.Location = new System.Drawing.Point(568, 111);
+            this.grparancel.Name = "grparancel";
+            this.grparancel.Size = new System.Drawing.Size(236, 83);
+            this.grparancel.TabIndex = 3;
+            this.grparancel.TabStop = false;
+            this.grparancel.Text = "\"C\" ARANCEL";
             // 
             // txtarancelmonto
             // 
@@ -1095,8 +1095,8 @@
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.grparancel);
+            this.Controls.Add(this.grpcargo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form_02_Frente";
@@ -1104,10 +1104,10 @@
             this.Load += new System.EventHandler(this.Form_02_Frente_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.grpcargo.ResumeLayout(false);
+            this.grpcargo.PerformLayout();
+            this.grparancel.ResumeLayout(false);
+            this.grparancel.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -1132,10 +1132,10 @@
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox txtdominio;
         public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.GroupBox grpcargo;
         public System.Windows.Forms.TextBox txtcargo;
         public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.GroupBox groupBox3;
+        public System.Windows.Forms.GroupBox grparancel;
         public System.Windows.Forms.TextBox txtarancelmonto;
         public System.Windows.Forms.TextBox txtarancelnumero;
         public System.Windows.Forms.Label label6;
