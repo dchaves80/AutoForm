@@ -252,7 +252,7 @@
             // 
             this.itxtautoridadopais.Enabled = false;
             this.itxtautoridadopais.Location = new System.Drawing.Point(530, 166);
-            this.itxtautoridadopais.MaxLength = 20;
+            this.itxtautoridadopais.MaxLength = 10;
             this.itxtautoridadopais.Name = "itxtautoridadopais";
             this.itxtautoridadopais.Size = new System.Drawing.Size(165, 20);
             this.itxtautoridadopais.TabIndex = 26;
@@ -261,7 +261,7 @@
             // 
             this.itxtnumerodocumento.Enabled = false;
             this.itxtnumerodocumento.Location = new System.Drawing.Point(341, 166);
-            this.itxtnumerodocumento.MaxLength = 10;
+            this.itxtnumerodocumento.MaxLength = 15;
             this.itxtnumerodocumento.Name = "itxtnumerodocumento";
             this.itxtnumerodocumento.Size = new System.Drawing.Size(165, 20);
             this.itxtnumerodocumento.TabIndex = 25;
@@ -346,7 +346,7 @@
             // 
             this.itxtsecretaria.Enabled = false;
             this.itxtsecretaria.Location = new System.Drawing.Point(41, 166);
-            this.itxtsecretaria.MaxLength = 10;
+            this.itxtsecretaria.MaxLength = 40;
             this.itxtsecretaria.Name = "itxtsecretaria";
             this.itxtsecretaria.Size = new System.Drawing.Size(253, 20);
             this.itxtsecretaria.TabIndex = 18;
@@ -355,7 +355,7 @@
             // 
             this.itxtjuzgado.Enabled = false;
             this.itxtjuzgado.Location = new System.Drawing.Point(41, 120);
-            this.itxtjuzgado.MaxLength = 50;
+            this.itxtjuzgado.MaxLength = 40;
             this.itxtjuzgado.Name = "itxtjuzgado";
             this.itxtjuzgado.Size = new System.Drawing.Size(253, 20);
             this.itxtjuzgado.TabIndex = 17;
@@ -364,7 +364,7 @@
             // 
             this.itxtcondominioembargado.Enabled = false;
             this.itxtcondominioembargado.Location = new System.Drawing.Point(341, 64);
-            this.itxtcondominioembargado.MaxLength = 50;
+            this.itxtcondominioembargado.MaxLength = 40;
             this.itxtcondominioembargado.Name = "itxtcondominioembargado";
             this.itxtcondominioembargado.Size = new System.Drawing.Size(354, 20);
             this.itxtcondominioembargado.TabIndex = 16;
@@ -373,7 +373,7 @@
             // 
             this.itxtapellidonombretitular.Enabled = false;
             this.itxtapellidonombretitular.Location = new System.Drawing.Point(341, 26);
-            this.itxtapellidonombretitular.MaxLength = 50;
+            this.itxtapellidonombretitular.MaxLength = 40;
             this.itxtapellidonombretitular.Name = "itxtapellidonombretitular";
             this.itxtapellidonombretitular.Size = new System.Drawing.Size(354, 20);
             this.itxtapellidonombretitular.TabIndex = 15;
