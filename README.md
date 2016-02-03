@@ -1,9 +1,5 @@
 #Issues
 
-##Corregido
-Formulario 08 Dorso campo de estado civil y nupcia se interponen y al parecer el campo soltero se repite
-
-
 # AutoForm
 
 Documentacion
