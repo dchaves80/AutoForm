@@ -1,0 +1,4 @@
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Schlüssel\bin\Debug\Schlüssel.dll
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Schlüssel\bin\Debug\Schlüssel.pdb
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Schlüssel\obj\Debug\Schlüssel.dll
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Schlüssel\obj\Debug\Schlüssel.pdb

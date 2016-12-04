@@ -17,16 +17,22 @@ namespace Presentacion.Splash
         {
             InitializeComponent();
             timer1.Stop();
-            if (Schlüssel.Registro.comprobarregistro() == true)
+           /* if (Schlüssel.Registro.comprobarregistro() == true)
             {
                 timer1.Start();
-            }
-            else 
+            }*/
+           /* else 
             {
                 MessageBox.Show("El tiempo de prueba finalizo. \n Consulte con el soporte de venta para adquirir el producto");
                 try { File.Delete(Application.StartupPath + "\\" + "Reportes.dll"); } catch  { }
                 this.Close();
-            }
+            }*/
+            Principal P = new Principal();
+            P.Show();
+            P.FormClosed += P_FormClosed;
+            this.Hide();
+            timer1.Stop();
+
             
         }
 
@@ -35,11 +41,11 @@ namespace Presentacion.Splash
             counter++;
             if (counter > 3) 
             {
-                Principal P = new Principal();
+               /* Principal P = new Principal();
                 P.Show();
                 P.FormClosed += P_FormClosed;
                 this.Hide();
-                timer1.Stop();
+                timer1.Stop();*/
             }
         }
 

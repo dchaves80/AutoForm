@@ -1,0 +1,8 @@
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Datos\bin\Debug\Database1.mdf
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Datos\bin\Debug\Database1_log.ldf
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Datos\bin\Debug\Datos.dll.config
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Datos\bin\Debug\Datos.dll
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Datos\bin\Debug\Datos.pdb
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Datos\obj\Debug\Datos.dll
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Datos\obj\Debug\Datos.pdb
+C:\Git\trunk\Autoform\AutoForm\AutoForm\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache

@@ -43,14 +43,39 @@ namespace Reportes.Class
                 PS.Margins.Left = Convert.ToInt32(Class.Medida.ObtenerMedidaHorizontal() * 100m);
                 PS.Margins.Bottom = 0;
                 PS.Margins.Right = 0;
+              /*  PS.HardMarginX = 0;
+                PS.HardMarginY = 0;*/
                 PS.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
-
+                reportViewer1.RenderingComplete += reportViewer1_RenderingComplete;
                 reportViewer1.SetPageSettings(PS);
+                
                 reportViewer1.RefreshReport();
 
                 //MessageBox.Show("centimetros left:" + PS.Margins.Left.ToString() + "\n" + "centimetros top:" + PS.Margins.Top.ToString());
 
             }
+            else 
+            {
+                int INDEXPDF = 0;
+
+                for (int a = 0; a < reportViewer1.LocalReport.ListRenderingExtensions().Length; a++)
+                {
+
+                    if (reportViewer1.LocalReport.ListRenderingExtensions()[a].Name.Contains("PDF"))
+                    {
+                        INDEXPDF = a;
+                        break;
+                    }
+                }
+                reportViewer1.ExportDialog(reportViewer1.LocalReport.ListRenderingExtensions()[INDEXPDF], "", "c:\\hola.pdf");
+            }
+        }
+
+        void reportViewer1_RenderingComplete(object sender, RenderingCompleteEventArgs e)
+        {
+
+          
+
         }
     }
 }

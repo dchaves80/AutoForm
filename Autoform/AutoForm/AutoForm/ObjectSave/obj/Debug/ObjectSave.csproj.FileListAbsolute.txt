@@ -1,0 +1,5 @@
+C:\Git\trunk\Autoform\AutoForm\AutoForm\ObjectSave\bin\Debug\ObjectSave.dll
+C:\Git\trunk\Autoform\AutoForm\AutoForm\ObjectSave\bin\Debug\ObjectSave.pdb
+C:\Git\trunk\Autoform\AutoForm\AutoForm\ObjectSave\obj\Debug\ObjectSave.csprojResolveAssemblyReference.cache
+C:\Git\trunk\Autoform\AutoForm\AutoForm\ObjectSave\obj\Debug\ObjectSave.dll
+C:\Git\trunk\Autoform\AutoForm\AutoForm\ObjectSave\obj\Debug\ObjectSave.pdb
